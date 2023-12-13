@@ -22,12 +22,12 @@ class MainController(private val mainFragment: MainFragment) {
         }
     }
 
-    fun getTasks() {
-        CoroutineScope(Dispatchers.IO).launch {
-            val tasks = taskDaoImpl.retrieveTasks()
-            mainFragment.updateTaskList(tasks)
-        }
-    }
+//    fun getTasks() {
+//        CoroutineScope(Dispatchers.IO).launch {
+//            val tasks = taskDaoImpl.retrieveTasks()
+//            mainFragment.updateTaskList(tasks)
+//        }
+//    }
 
     fun editTask(task: Task){
         CoroutineScope(Dispatchers.IO).launch {
