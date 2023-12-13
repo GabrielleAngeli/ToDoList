@@ -5,6 +5,7 @@ import android.os.Bundle
 import br.edu.ifsp.scl.sdm.todolist.R
 import br.edu.ifsp.scl.sdm.todolist.databinding.ActivityMainBinding
 
+//container para os fragments
 class MainActivity : AppCompatActivity() {
     private val amb: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)

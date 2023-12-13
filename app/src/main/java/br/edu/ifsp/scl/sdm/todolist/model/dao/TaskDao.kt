@@ -10,7 +10,7 @@ import br.edu.ifsp.scl.sdm.todolist.model.entity.Task
 @Dao
 interface TaskDao {
     companion object {
-        const val TASK_TABLE = "task"
+        const val TASK_TABLE = "task" // nome da tabela
     }
     @Insert
     fun createTask(task: Task)
